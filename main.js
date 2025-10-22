@@ -71,7 +71,7 @@ function showPopup(messageHtml, title = 'Request submitted') {
       const data = await res.json();
       if (!res.ok) throw new Error(data?.message || 'Request failed');
 
-      // ✅ Popup confirmation only (no inline message)
+      //  Popup confirmation only 
       showPopup(`
         Thanks, <strong>${payload.name}</strong>! 
         We received your details. A confirmation email has been sent to 
